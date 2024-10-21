@@ -111,7 +111,13 @@ return [
             // 'encrypt' => env('DB_ENCRYPT', 'yes'),
             // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
         ],
-
+        'your_cache_connection' => [
+        'driver' => 'mysql',
+        'host' => env('DB_HOST', '127.0.0.1'),
+        'database' => env('DB_CACHE_DATABASE', 'cache'),
+        'username' => env('DB_CACHE_USERNAME', 'root'),
+        'password' => env('DB_CACHE_PASSWORD', ''),
+    ],
     ],
 
     /*
